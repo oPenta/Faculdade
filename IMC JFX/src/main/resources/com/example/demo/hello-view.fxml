@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.HelloController">
+  <TextField fx:id="nomeField" promptText="Nome" layoutX="14.0" layoutY="14.0" />
+  <TextField fx:id="alturaField" promptText="Altura (m)" layoutX="14.0" layoutY="50.0" />
+  <TextField fx:id="pesoField" promptText="Peso (kg)" layoutX="14.0" layoutY="86.0" />
+
+  <Button fx:id="calcularButton" text="Calcular IMC" layoutX="14.0" layoutY="122.0" onAction="#calcularIMC" />
+  <Button fx:id="salvarButton" text="Salvar" layoutX="150.0" layoutY="122.0" onAction="#salvarDados" />
+  <Button fx:id="carregarButton" text="Carregar" layoutX="220.0" layoutY="122.0" onAction="#carregarDados" />
+
+  <TableView fx:id="tableView" layoutX="14.0" layoutY="200.0" prefHeight="200.0" prefWidth="400.0">
+    <columns>
+      <TableColumn fx:id="nomeColumn" text="Nome" prefWidth="100.0" />
+      <TableColumn fx:id="alturaColumn" text="Altura (m)" prefWidth="100.0" />
+      <TableColumn fx:id="pesoColumn" text="Peso (kg)" prefWidth="100.0" />
+      <TableColumn fx:id="imcColumn" text="Classificação IMC" prefWidth="100.0" />
+    </columns>
+  </TableView>
+</AnchorPane>
