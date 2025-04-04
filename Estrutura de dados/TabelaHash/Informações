@@ -1,0 +1,1 @@
+Tabela hash para 1000 posições, metodo da dobra pra obter a função hash e método do encadeamento exterior para evitar colisão.
