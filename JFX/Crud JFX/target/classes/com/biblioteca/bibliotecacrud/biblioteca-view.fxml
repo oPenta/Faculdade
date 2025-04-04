@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.biblioteca.bibliotecacrud.controller.LivroController" spacing="15" alignment="TOP_CENTER"
+      style="-fx-padding: 20; -fx-background-color: #e8f5e9;">
+
+    <!-- Header Section -->
+    <Label text="Gerenciamento de Livros" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1b5e20;"/>
+
+    <!-- Form Section -->
+    <GridPane hgap="15" vgap="15" style="-fx-padding: 20; -fx-background-color: #ffffff; -fx-border-color: #c8e6c9; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <Label text="Título:" style="-fx-font-size: 14px; -fx-text-fill: #2e7d32;"/>
+        <TextField fx:id="txtTitulo" GridPane.columnIndex="1" style="-fx-background-radius: 5; -fx-border-radius: 5;"/>
+
+        <Label text="Autor:" GridPane.rowIndex="1" style="-fx-font-size: 14px; -fx-text-fill: #2e7d32;"/>
+        <TextField fx:id="txtAutor" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-background-radius: 5; -fx-border-radius: 5;"/>
+
+        <Label text="Ano Publicação:" GridPane.rowIndex="2" style="-fx-font-size: 14px; -fx-text-fill: #2e7d32;"/>
+        <TextField fx:id="txtAnoPublicacao" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-background-radius: 5; -fx-border-radius: 5;"/>
+
+        <Label text="Gênero:" GridPane.rowIndex="3" style="-fx-font-size: 14px; -fx-text-fill: #2e7d32;"/>
+        <TextField fx:id="txtGenero" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-background-radius: 5; -fx-border-radius: 5;"/>
+    </GridPane>
+
+    <!-- Button Section -->
+    <HBox spacing="15" alignment="CENTER" style="-fx-padding: 10;">
+        <Button text="Cadastrar" onAction="#cadastrarLivro" style="-fx-background-color: #66bb6a; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5; -fx-padding: 10 20;"/>
+        <Button text="Atualizar" onAction="#atualizarLivro" style="-fx-background-color: #42a5f5; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5; -fx-padding: 10 20;"/>
+        <Button text="Excluir" onAction="#excluirLivro" style="-fx-background-color: #ef5350; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5; -fx-padding: 10 20;"/>
+    </HBox>
+
+    <!-- Table Section -->
+    <TableView fx:id="tabelaLivros" prefHeight="300" prefWidth="600" style="-fx-border-color: #c8e6c9; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-background-radius: 10;">
+        <columns>
+            <TableColumn fx:id="colunaId" text="ID" prefWidth="50" style="-fx-alignment: CENTER; -fx-font-size: 14px;"/>
+            <TableColumn fx:id="colunaTitulo" text="Título" prefWidth="200" style="-fx-font-size: 14px;"/>
+            <TableColumn fx:id="colunaAutor" text="Autor" prefWidth="150" style="-fx-font-size: 14px;"/>
+            <TableColumn fx:id="colunaAnoPublicacao" text="Ano" prefWidth="100" style="-fx-font-size: 14px;"/>
+            <TableColumn fx:id="colunaGenero" text="Gênero" prefWidth="100" style="-fx-font-size: 14px;"/>
+        </columns>
+    </TableView>
+
+</VBox>
