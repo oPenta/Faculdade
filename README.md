@@ -32,7 +32,7 @@ Este repositório reúne **atividades práticas** realizadas durante a faculdade
 
 - [ Estrutura](#-estrutura-do-projeto)
 - [ Tecnologias](#-tecnologias-utilizadas)
-- 
+  
 ---
 
 ## 📂 Estrutura do Projeto
