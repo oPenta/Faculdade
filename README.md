@@ -1,7 +1,7 @@
 <h1 align="center">📚 Repositório Faculdade</h1>
 
 <p align="center">
-  Projetos acadêmicos, práticas de programação, algoritmos e experiências em várias linguagens — tudo reunido neste repositório 💻📘
+  Projetos acadêmicos, práticas de programação, algoritmos e experiências em várias linguagens - tudo reunido neste repositório 
 </p>
 
 <p align="center">
