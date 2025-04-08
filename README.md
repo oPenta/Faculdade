@@ -24,8 +24,6 @@ Este repositório reúne **atividades práticas** realizadas durante a faculdade
 - Programação concorrente (Threads)
 - HTML/CSS para front-end básico
 
-É um "diário de bordo" dos estudos, com códigos que vão desde conceitos básicos até aplicações mais completas.
-
 ---
 
 ## 🧭 Sumário
