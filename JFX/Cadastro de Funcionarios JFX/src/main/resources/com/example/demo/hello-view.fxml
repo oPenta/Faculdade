@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.HelloController" style="-fx-background-color: #f0f0f0;">
+  <HBox spacing="20" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+
+    <!-- Formulário de Cadastro -->
+    <VBox spacing="15" alignment="TOP_LEFT" style="-fx-padding: 10; -fx-background-color: #ffffff; -fx-border-color: #ccc; -fx-border-radius: 5; -fx-background-radius: 5;">
+      <Label text="Cadastro de Funcionário" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+      <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" />
+          <ColumnConstraints />
+        </columnConstraints>
+
+        <Label text="Matrícula:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="txtMatricula" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Nome:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="txtNome" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="CPF:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="txtCpf" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Data de Nascimento:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <DatePicker fx:id="dpNascimento" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Label text="Cargo:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <TextField fx:id="txtCargo" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+        <Label text="Salário:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <TextField fx:id="txtSalario" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+        <Label text="Data de Contratação:" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+        <DatePicker fx:id="dpContratacao" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+      </GridPane>
+
+      <Separator style="-fx-background-color: #ccc;" />
+
+      <Label text="Endereço" style="-fx-font-weight: bold; -fx-text-fill: #333;" />
+      <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" />
+          <ColumnConstraints />
+        </columnConstraints>
+
+        <Label text="Logradouro:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="txtLogradouro" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Número:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="txtNumero" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="Complemento:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="txtComplemento" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Bairro:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="txtBairro" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Label text="Cidade:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <TextField fx:id="txtCidade" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+        <Label text="Estado:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <TextField fx:id="txtEstado" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+        <Label text="CEP:" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+        <TextField fx:id="txtCep" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+      </GridPane>
+    </VBox>
+
+    <!-- Painel de Ações e Resultados -->
+    <VBox spacing="15" alignment="TOP_CENTER" style="-fx-padding: 20; -fx-background-color: #ffffff; -fx-border-color: #ddd; -fx-border-radius: 8; -fx-background-radius: 8;">
+
+      <!-- Campo de Consulta -->
+      <Label text="Consultar Funcionário por Matrícula:" style="-fx-font-weight: bold; -fx-text-fill: #333;" />
+      <TextField fx:id="txtMatriculaConsulta" promptText="Digite a matrícula..." maxWidth="200" />
+
+      <!-- Botões -->
+      <GridPane hgap="10" vgap="10">
+        <Button text="Cadastrar" onAction="#onCadastrarClick" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Button text="Excluir" onAction="#onExcluirClick" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Button text="Consultar" onAction="#onConsultarClick" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold;" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Button text="Listar Todos" onAction="#onListarTodosClick" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+      </GridPane>
+
+      <!-- Área de Resultado -->
+      <TextArea fx:id="txtResultado" prefRowCount="20" wrapText="true"
+                style="-fx-font-family: 'Courier New'; -fx-font-size: 13px; -fx-background-color: #f9f9f9; -fx-border-color: #ccc; -fx-border-radius: 5; -fx-padding: 10;"
+                prefWidth="400" />
+    </VBox>
+  </HBox>
+</AnchorPane>
