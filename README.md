@@ -30,13 +30,10 @@ Este repositório reúne **atividades práticas** realizadas durante a faculdade
 
 ## 🧭 Sumário
 
-- [📂 Estrutura](#-estrutura-do-projeto)
-- [🛠 Tecnologias](#-tecnologias-utilizadas)
-- [🚀 Como Executar](#-como-executar)
+- [ Estrutura](#-estrutura-do-projeto)
+- [ Tecnologias](#-tecnologias-utilizadas)
 - [📷 Imagens / Previews](#-imagens--previews)
 - [📄 Licença](#-licença)
-- [📬 Contato](#-contato)
-
 ---
 
 ## 📂 Estrutura do Projeto
@@ -58,18 +55,4 @@ Este repositório reúne **atividades práticas** realizadas durante a faculdade
 - 🔹 **C** – Estrutura de Dados
 - 🔹 **HTML/CSS** – Telas básicas para web
 - 🔹 **JavaFX** – Interfaces gráficas e aplicações desktop
-
 ---
-
-## 🚀 Como Executar
-
-### 🔸 Projetos Java / JavaFX
-
-> Requisitos: JDK 17+, JavaFX SDK (se necessário), IDE como IntelliJ ou Eclipse
-
-```bash
-# Clone o repositório
-git clone https://github.com/oPenta/Faculdade.git
-
-# Importe o projeto na sua IDE
-# Navegue até o diretório desejado e execute a classe principal (geralmente Main ou HelloApplication)
