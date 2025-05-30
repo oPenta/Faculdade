@@ -1,0 +1,64 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+}
+h1 {
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+strong {
+  color: #2c3e50;
+  font-size: 1.1em;
+}
+code {
+  background-color: #eee;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+}
+.Adicional-info {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  color: #555;
+}
+.modal, .menu {
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+.modal {
+  border: 1px solid #bdc3c7;
+  background-color: #ecf0f1;
+}
+.menu {
+  border: 1px solid #34495e;
+  background-color: #d0d7de;
+}
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2980b9;
+}
+h2 {
+  color: #2c3e50;
+  margin-top: 2rem;
+}
+
