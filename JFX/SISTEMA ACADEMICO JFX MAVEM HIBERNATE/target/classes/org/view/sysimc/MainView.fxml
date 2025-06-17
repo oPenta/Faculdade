@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sysimc.controller.MainController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Cadastros">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirTelaCursos" text="Cursos" />
+                        <MenuItem mnemonicParsing="false" onAction="#abrirTelaProfessores" text="Professores" />
+                        <MenuItem mnemonicParsing="false" onAction="#abrirTelaDisciplinas" text="Disciplinas" />
+                        <MenuItem mnemonicParsing="false" onAction="#abrirTelaTurmas" text="Turmas" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#fecharAplicacao" text="Sair" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ajuda">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Sobre" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

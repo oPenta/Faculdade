@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.sysimc.controller.MainController"
+            style="-fx-background-color: #F5F5F5; -fx-font-family: 'Segoe UI';">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER"
+                 style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-weight: bold;">
+            <menus>
+                <Menu text="Navegação" style="-fx-text-fill: #0078D7;">
+                    <items>
+                        <MenuItem text="Início (Painel de Controle)" onAction="#mostrarDashboard"
+                                  style="-fx-text-fill: #0078D7;" />
+                    </items>
+                </Menu>
+                <Menu text="Cadastros" style="-fx-text-fill: #0078D7;">
+                    <items>
+                        <MenuItem text="Cursos" onAction="#abrirTelaCursos" style="-fx-text-fill: #0078D7;" />
+                        <MenuItem text="Professores" onAction="#abrirTelaProfessores" style="-fx-text-fill: #0078D7;" />
+                        <MenuItem text="Disciplinas" onAction="#abrirTelaDisciplinas" style="-fx-text-fill: #0078D7;" />
+                        <MenuItem text="Turmas" onAction="#abrirTelaTurmas" style="-fx-text-fill: #0078D7;" />
+                    </items>
+                </Menu>
+                <Menu text="Ajuda" style="-fx-text-fill: #0078D7;">
+                    <items>
+                        <MenuItem text="Sobre" style="-fx-text-fill: #0078D7;" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <StackPane fx:id="contentPane" BorderPane.alignment="CENTER"
+                   style="-fx-background-color: #ECF0F1;" />
+    </center>
+</BorderPane>

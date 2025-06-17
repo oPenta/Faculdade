@@ -1,0 +1,17 @@
+org\syscurso\controller\MainController.class
+org\syscurso\controller\ProfessorController.class
+org\syscurso\utils\JPAUtil.class
+org\syscurso\model\Turma.class
+org\syscurso\model\Disciplina.class
+org\syscurso\utils\Validador.class
+org\syscurso\utils\AlertaUtil.class
+org\syscurso\dao\TurmaDAO.class
+org\syscurso\dao\CursoDAO.class
+org\syscurso\dao\ProfessorDAO.class
+org\syscurso\controller\DisciplinaController.class
+org\syscurso\Main.class
+org\syscurso\controller\CursoController.class
+org\syscurso\model\Curso.class
+org\syscurso\model\Professor.class
+org\syscurso\controller\TurmaController.class
+org\syscurso\dao\DisciplinaDAO.class

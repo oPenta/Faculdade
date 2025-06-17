@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" style="-fx-background-color: #F5F5F5; -fx-font-family: 'Segoe UI';" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sysimc.controller.CursoController">
+    <children>
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Gerenciamento de Cursos">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <TableView fx:id="tabelaCursos" prefHeight="250.0" prefWidth="780.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="ID">
+                    <cellValueFactory><PropertyValueFactory property="id" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="450.0" text="Nome">
+                    <cellValueFactory><PropertyValueFactory property="nome" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="200.0" text="Carga Horária (h)">
+                    <cellValueFactory><PropertyValueFactory property="cargaHoraria" /></cellValueFactory>
+                </TableColumn>
+            </columns>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+        </TableView>
+        <GridPane hgap="10.0" maxWidth="600.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="480.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label style="-fx-font-size: 14px; -fx-text-fill: #555555; -fx-font-weight: bold;" text="Nome do Curso:" />
+                <TextField fx:id="tfNome" promptText="Ex: Engenharia de Software" style="-fx-font-size: 14px; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #CCCCCC;" GridPane.columnIndex="1" />
+                <Label style="-fx-font-size: 14px; -fx-text-fill: #555555; -fx-font-weight: bold;" text="Carga Horária:" GridPane.rowIndex="1" />
+                <TextField fx:id="tfCargaHoraria" promptText="Ex: 3600" style="-fx-font-size: 14px; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #CCCCCC;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER" spacing="20.0">
+            <children>
+                <Button onAction="#handleNovo" prefWidth="100.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #0078D7; -fx-text-fill: white; -fx-background-radius: 5;" text="Novo" />
+                <Button onAction="#handleSalvar" prefWidth="100.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #0078D7; -fx-text-fill: white; -fx-background-radius: 5;" text="Salvar" />
+                <Button onAction="#handleExcluir" prefWidth="100.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #D32F2F; -fx-text-fill: white; -fx-background-radius: 5;" text="Excluir" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>
