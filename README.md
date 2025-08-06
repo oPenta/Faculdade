@@ -38,11 +38,9 @@ Este repositório reúne **atividades práticas** realizadas durante a faculdade
 | Pasta                      | Descrição                                                                 |
 |---------------------------|---------------------------------------------------------------------------|
 | `Estrutura de dados`      | Implementações de listas, pilhas, filas, árvores e algoritmos clássicos   |
-| `Forks`                   | Projetos adaptados de terceiros para estudo e aprimoramento               |
 | `HTML/ Tela de login`     | Página de login simples com HTML + CSS                                    |
 | `JAVA`                    | Exercícios de lógica e programação em Java puro                           |
 | `JFX`                     | Projetos gráficos com JavaFX                                              |
-| `Threads`                 | Exemplos de concorrência e paralelismo com `Thread` e `Runnable`          |
 
 ---
 
