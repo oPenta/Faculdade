@@ -16,7 +16,7 @@
 
 ## 🛠 Tecnologias Utilizadas
 
-- 🔹 **Java** – POO, algoritmos, JavaFX e multithreading  
+- 🔹 **Java** – POO, algoritmos, JavaFX 
 - 🔹 **C** – Estrutura de Dados  
 - 🔹 **HTML/CSS** – Telas básicas para web  
 - 🔹 **JavaFX** – Interfaces gráficas e aplicações desktop  
