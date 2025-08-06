@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração de Conceitos Web</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main">
+
+    <div id="app">
+        <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Demonstrações</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#grid">Grid Responsivo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cards">Cards com v-for</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#modal">Modal Bootstrap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#v-if-show">v-if vs v-show</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#v-model">v-model</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="grid" class="container">
+            <h2>Grid Responsivo</h2>
+            <p>
+                O <strong>Grid do Bootstrap</strong> é um sistema para criar layouts flexíveis. Ele divide a tela em <strong>12 colunas</strong>. 
+                Dizemos aos elementos quantas dessas 12 colunas eles devem ocupar em diferentes tamanhos de tela. 
+                Isso permite que o site se adapte perfeitamente a celulares, tablets e desktops. 
+            </p>
+            <div class="demo-box">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3"><div class="grid-col mb-3">Ocupa 1/4 (telas grandes)</div></div>
+                    <div class="col-12 col-md-6 col-lg-3"><div class="grid-col mb-3">Ocupa 1/4 (telas grandes)</div></div>
+                    <div class="col-12 col-md-6 col-lg-3"><div class="grid-col mb-3">Ocupa 1/4 (telas grandes)</div></div>
+                    <div class="col-12 col-md-6 col-lg-3"><div class="grid-col mb-3">Ocupa 1/4 (telas grandes)</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards" class="container">
+            <h2>Lista de Cards com v-for</h2>
+            <p>
+                A diretiva <strong><code>v-for</code></strong> do Vue.js é um "laço de repetição" para o HTML.
+                Ela pega um array de dados do nosso JavaScript (no caso, a lista de <code>produtos</code>) e repete um bloco de HTML para cada item do array.
+                Isso é extremamente útil para criar listas, tabelas e galerias de forma dinâmica, sem precisar escrever o código para cada item manualmente.
+            </p>
+            <div class="demo-box">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4" v-for="produto in produtos">
+                        <div class="card h-100 product-card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ produto.titulo }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="modal" class="container">
+            <h2>Modal Bootstrap</h2>
+            <p>
+                Um <strong>Modal</strong> é uma janela "pop-up" que aparece sobre o conteúdo principal. 
+                O Bootstrap torna sua criação muito fácil usando atributos <code>data-bs-*</code>. 
+                O botão usa <code>data-bs-target="#exemploModal"</code> para "mirar" no modal que tem o <code>id="exemploModal"</code>. 
+                Toda a lógica de abrir e fechar é controlada pelo JavaScript do próprio Bootstrap. 
+            </p>
+            <div class="demo-box text-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemploModal">
+                    Abrir Modal
+                </button>
+            </div>
+        </section>
+
+        <section id="v-if-show" class="container">
+            <h2>v-if vs v-show</h2>
+            <p>
+                Ambas as diretivas escondem ou mostram elementos, mas funcionam de forma diferente. 
+                <strong><code>v-if</code></strong> literalmente <strong>remove</strong> o elemento do código HTML quando a condição é falsa, destruindo-o. 
+                Já <strong><code>v-show</code></strong> apenas aplica o estilo CSS <code>display: none</code>, mantendo o elemento no código, apenas invisível. 
+                <br><strong>Teste prático:</strong> digite algo nos dois campos abaixo, e depois use o interruptor para ver qual deles preserva o texto. 
+            </p>
+            <div class="demo-box">
+                <div class="form-check form-switch mb-4">
+                  <input class="form-check-input" type="checkbox" role="switch" v-model="mostrarElemento" id="toggle-if-show">
+                  <label class="form-check-label" for="toggle-if-show">Mostrar / Ocultar Elementos</label>
+                </div>
+                <div v-if="mostrarElemento" class="alert alert-info">
+                  <strong>Bloco com <code>v-if</code></strong>
+                  <p class="mb-1">Este bloco é destruído e recriado. O texto que você digitar será perdido.</p>
+                  <input type="text" class="form-control" placeholder="Digite aqui...">
+                </div>
+                <div v-show="mostrarElemento" class="alert alert-warning">
+                  <strong>Bloco com <code>v-show</code></strong>
+                  <p class="mb-1">Este bloco é apenas escondido com CSS. O texto será preservado.</p>
+                  <input type="text" class="form-control" placeholder="Digite aqui...">
+                </div>
+            </div>
+        </section>
+        
+        <section id="v-model" class="container">
+            <h2>v-model</h2>
+            <p>
+                A diretiva <strong><code>v-model</code></strong> é uma das mais poderosas do Vue. Ela cria uma "ligação de dados de mão dupla" (<strong>two-way data binding</strong>). 
+                Isso significa que, se você digitar no campo, a variável no JavaScript muda. 
+                E se a variável no JavaScript mudar por outro motivo, o campo no HTML será atualizado automaticamente. 
+            </p>
+            <div class="demo-box">
+                <input type="text" class="form-control" v-model="mensagem" placeholder="Digite algo aqui...">
+                <p class="mt-3">A variável 'mensagem' agora contém: <strong class="text-primary">{{ mensagem }}</strong></p>
+            </div>
+        </section>
+
+        <div class="modal fade" id="exemploModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h5 class="modal-title">Título do Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body"><p>Este é um exemplo de um modal do Bootstrap.</p></div>
+                    <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
