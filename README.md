@@ -16,8 +16,9 @@
 
 ## 🛠 Tecnologias Utilizadas
 
-- 🔹 **Java** – POO, algoritmos, JavaFX e multithreading
-- 🔹 **C** – Estrutura de Dados
-- 🔹 **HTML/CSS** – Telas básicas para web
-- 🔹 **JavaFX** – Interfaces gráficas e aplicações desktop
----
+- 🔹 **Java** – POO, algoritmos, JavaFX e multithreading  
+- 🔹 **C** – Estrutura de Dados  
+- 🔹 **HTML/CSS** – Telas básicas para web  
+- 🔹 **JavaFX** – Interfaces gráficas e aplicações desktop  
+- 🔹 **Vue.js** – Interfaces reativas, diretivas (`v-for`, `v-if`, `v-show`, `v-model`)  
+- 🔹 **SQL** – Criação e manipulação de bancos de dados relacionais (MySQL)
