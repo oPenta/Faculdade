@@ -14,36 +14,6 @@
 
 ---
 
-## 📌 Sobre o Repositório
-
-Este repositório reúne **atividades práticas** realizadas durante a faculdade, com foco em disciplinas como:
-
-- Estrutura de Dados
-- Programação Orientada a Objetos (POO)
-- Interfaces gráficas com JavaFX
-- Programação concorrente (Threads)
-- HTML/CSS para front-end básico
-
----
-
-## 🧭 Sumário
-
-- [ Estrutura](#-estrutura-do-projeto)
-- [ Tecnologias](#-tecnologias-utilizadas)
-  
----
-
-## 📂 Estrutura do Projeto
-
-| Pasta                      | Descrição                                                                 |
-|---------------------------|---------------------------------------------------------------------------|
-| `Estrutura de dados`      | Implementações de listas, pilhas, filas, árvores e algoritmos clássicos   |
-| `HTML/ Tela de login`     | Página de login simples com HTML + CSS                                    |
-| `JAVA`                    | Exercícios de lógica e programação em Java puro                           |
-| `JFX`                     | Projetos gráficos com JavaFX                                              |
-
----
-
 ## 🛠 Tecnologias Utilizadas
 
 - 🔹 **Java** – POO, algoritmos, JavaFX e multithreading
